@@ -1,0 +1,10 @@
+[Unit]
+Description=Web server for exporting the VMware Carbon Black EDR status
+
+[Service]
+ExecStart=/usr/bin/python3 ###ROOT###/svc/state-server.py 
+Restart=always
+User=
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+This document describe the files functions:
+
+install-service.sh
+   This script will deploy the edr-state-server service. This service will read the conf/state.conf and export via the HTTP protocol.
+
+edr-state-server.service
+   This is the service definition file.
+
+state-server.py
+   This is the main program of the service. It is a python script which run a simple http web server. It will return the data in conf/state.conf
+
+state-monitor.py
